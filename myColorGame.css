@@ -1,0 +1,104 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Impact";
+}
+
+.square {/*this is a class*/
+	width: 30%;
+	background: purple;
+    padding-bottom: 30%;
+    float: left;     /*means element floats to left of container*/
+    margin: 1.66%; /*this makes it so u can actually see the squares, otherwise it'd be one block*/
+    border-radius: 15%; /*this rounds out the squares, 50% will give you circles lol*/
+    transition: background 0.7s;/*the fade out for squares when wrong click, targets background*/
+    -webkit-transition: background 0.7s;
+    /*for browser support*/
+    -moz-transition: background 0.7s;
+}
+
+#container {
+	margin: 20px auto; /*this means 0 margin on top and bottom and auto on left and right*/
+ max-width:600px;
+}
+
+h1 {
+text-align: center;
+line-height: 1.1;
+font-weight:normal;/*makes the font look better*/
+color: white;
+background: crimson; 
+margin: 0; /*makes black space go away*/
+text-transform: uppercase; /*makes everything uppercase*/
+padding: 20px 0;/*this is padding for top AND bottom*/
+}
+
+/*span{
+color: white;
+}*/
+
+h4{
+background: white;
+text-align: center;
+color: #232323;
+padding: 20px;
+font-family: "Times New Roman";
+margin:0;
+}
+
+
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	/*a problem you had was the span was originally white
+	and it didnt show on stripe so you changed stipe's text color to black but
+	it didnt work because of specificity*/
+}
+
+.selected
+/*the selected class shows which difficulty is selected*/
+{
+color: white;	/*changes font color to reverse the usual scheme*/
+background: crimson;
+}
+
+#colorDisplay
+{
+font-size: 200%;
+}
+
+button{
+border: none;/*this makes the buttons look a lot cooler*/
+text-transform: uppercase;
+height: 100%;/*this makes the button text fill up the space because 
+it takes up 100% of the containing element*/
+font-weight: 700;
+color: crimson;
+letter-spacing: 1px;
+font-size: inherit;/*makes it inherit font size*/
+transition: all .3s;/*this makes the button fade as u unselect.
+means all properties will take .3 seconds to transition*/
+-webkit-transition: all 0.7s;
+    /*for browser support*/
+-moz-transition: all 0.7s;
+outline: none; /*very random, there's this blue outline to remove*/
+}
+
+#message{
+display: inline-block;/*shows box, otherwise try again will just pop up*/
+width: 20%;
+}
+
+button:hover {
+color: white;	/*changes font color to reverse the usual scheme*/
+background: crimson;
+}
+
+
+
+
+
+
+
+
